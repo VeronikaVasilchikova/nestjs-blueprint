@@ -1,12 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { Book } from '../../core/entities';
-import { IDataServices, ICrmServices } from '../../core/abstracts';
+import { IDataServices } from '../../core/abstracts';
 
 @Injectable()
 export class BookUseCases {
   constructor(
     private dataServices: IDataServices,
-    private crmServices: ICrmServices,
   ) {}
 
   getAllBooks(): Promise<Book[]> {
@@ -21,7 +20,6 @@ export class BookUseCases {
     try {
       // call to our dependencies
       const createdBook = await this.dataServices.books.create(book);
-      await this.crmServices.bookAdded(createdBook);
 
       return createdBook;
     } catch (error) {
