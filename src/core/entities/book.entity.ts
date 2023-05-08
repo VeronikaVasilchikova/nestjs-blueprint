@@ -4,9 +4,9 @@ export class Book {
 
   title: string;
 
-  author: Author;
+  authorId: string;
 
-  genre: Genre;
+  genreId: string;
 
   publishDate: Date;
 }

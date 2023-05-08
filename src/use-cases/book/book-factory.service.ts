@@ -7,8 +7,8 @@ export class BookFactoryService {
   createNewBook(createBookDto: CreateBookDto) {
     const newBook = new Book();
     newBook.title = createBookDto.title;
-    newBook.author = createBookDto.authorId;
-    newBook.genre = createBookDto.genreId;
+    newBook.authorId = createBookDto.authorId;
+    newBook.genreId = createBookDto.genreId;
     newBook.publishDate = createBookDto.publishDate;
 
     return newBook;
@@ -17,8 +17,8 @@ export class BookFactoryService {
   updateBook(updateBookDto: UpdateBookDto) {
     const newBook = new Book();
     newBook.title = updateBookDto.title;
-    newBook.author = updateBookDto.authorId;
-    newBook.genre = updateBookDto.genreId;
+    newBook.authorId = updateBookDto.authorId;
+    newBook.genreId = updateBookDto.genreId;
     newBook.publishDate = updateBookDto.publishDate;
 
     return newBook;

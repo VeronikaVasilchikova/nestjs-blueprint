@@ -96,3 +96,8 @@ This project is licensed under the [NAME HERE] License - see the LICENSE.md file
 Inspiration, code snippets, etc.
 * [clean-architecture-node](https://github.com/royib/clean-architecture-node)
 * [Node Clean Architecture — Deep Dive](https://betterprogramming.pub/node-clean-architecture-deep-dive-ab68e523554b)
+
+
+https://slides.com/i-i-2/code/edit
+
+https://betterprogramming.pub/clean-node-js-architecture-with-nestjs-and-typescript-34b9398d790f
