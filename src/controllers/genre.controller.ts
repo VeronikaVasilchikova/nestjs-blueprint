@@ -12,7 +12,7 @@ export class GenreController {
   }
 
   @Get(':id')
-  async getById(@Param('id') id: any) {
+  async getById(@Param('id') id: string) {
     return this.genreUseCases.getGenreById(id);
   }
 

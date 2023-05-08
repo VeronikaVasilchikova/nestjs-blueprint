@@ -12,7 +12,7 @@ export class BookUseCases {
     return this.dataServices.books.getAll();
   }
 
-  getBookById(id: any): Promise<Book> {
+  getBookById(id: string): Promise<Book> {
     return this.dataServices.books.get(id);
   }
 

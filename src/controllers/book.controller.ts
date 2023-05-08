@@ -15,7 +15,7 @@ export class BookController {
   }
 
   @Get(':id')
-  async getById(@Param('id') id: any) {
+  async getById(@Param('id') id: string) {
     return this.bookUseCases.getBookById(id);
   }
 

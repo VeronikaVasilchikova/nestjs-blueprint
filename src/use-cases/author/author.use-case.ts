@@ -15,7 +15,7 @@ export class AuthorUseCases {
     return this.dataServices.authors.getAll();
   }
 
-  getAuthorById(id: any): Promise<Author> {
+  getAuthorById(id: string): Promise<Author> {
     return this.dataServices.authors.get(id);
   }
 

@@ -7,10 +7,10 @@ export class CreateBookDto {
   title: string;
 
   @IsNotEmpty()
-  authorId: any;
+  authorId: string;
 
   @IsNotEmpty()
-  genreId: any;
+  genreId: string;
 
   @IsDate()
   publishDate: Date;

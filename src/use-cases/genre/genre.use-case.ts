@@ -15,7 +15,7 @@ export class GenreUseCases {
     return this.dataServices.genres.getAll();
   }
 
-  getGenreById(id: any): Promise<Genre> {
+  getGenreById(id: string): Promise<Genre> {
     return this.dataServices.genres.get(id);
   }
 
